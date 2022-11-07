@@ -2,10 +2,10 @@ import mongoose from "mongoose";
 
 const dbConnection = async () => {
 	try {
-		mongoose.connect(process.env.MONGODB_CNN, {
-			useNewUrlParser: true,
-			useUnifiedTopology: true,
-		});
+		mongoose.connect(process.env.MONGODB_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
 
 		console.log("Base de datos online");
 	} catch (error) {
