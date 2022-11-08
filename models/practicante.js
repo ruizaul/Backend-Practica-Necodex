@@ -38,8 +38,8 @@ const PracticanteSchema = Schema({
     required: true,
   },
   status: {
-    type: String,
-    default: 'activo',
+    type: Boolean,
+    default: true,
   },
 });
 
